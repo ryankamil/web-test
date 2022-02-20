@@ -1,0 +1,397 @@
+/* google font */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap");
+
+/* css reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: borde r-box;
+  transition: all 0.5s;
+}
+
+/* style */
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(img/banner.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  padding: 2%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav .logo img {
+  width: 150px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 40px 0;
+  margin-left: 25%;
+}
+
+nav ul li a {
+  text-decoration: none;
+  padding: 0 15px;
+  color: #fff;
+  font-size: 14px;
+}
+
+nav ul li::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  background-color: orange;
+  display: block;
+  margin: auto;
+  transition: all 0.5s;
+}
+
+nav ul li:hover::after {
+  width: 60%;
+}
+
+/* text-box style */
+.text-box {
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 35%;
+  left: 5%;
+  transform: translate(-50% -50%);
+  text-align: center;
+}
+
+.text-box h1 {
+  font-size: 62px;
+}
+
+.text-box p {
+  margin: 25px 0 40px;
+  font-size: 14px;
+  color: #fff;
+}
+
+/* button style */
+.hero-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  font-size: 14px;
+  background-color: transparent;
+  position: relative;
+}
+
+.hero-btn:hover {
+  border: 1px solid rgb(233, 87, 70);
+  background: rgb(233, 87, 70);
+  transition: 1s;
+}
+
+/* course style */
+.course {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+p {
+  color: #777;
+  font-size: 14px;
+  list-style: 22px;
+  padding: 10px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.course-col {
+  flex-basis: 31%;
+  background-color: #fff3f3;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+h3 {
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.course-col:hover {
+  box-shadow: 0 0 20px 0 rgba(139, 164, 247, 0.5);
+}
+
+/* content campus style */
+.campus {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.campus-cols {
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.campus-cols img {
+  width: 100%;
+}
+
+.layer {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+.layer:hover {
+  background: rgba(266, 0, 0, 0.7);
+}
+
+.layer h3 {
+  width: 100%;
+  font-weight: 500;
+  color: #fff;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.layer:hover h3 {
+  bottom: 49%;
+  opacity: 1;
+}
+
+/* section facilites */
+.facilities {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.facilities-col {
+  flex-basis: 31%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+}
+
+.facilities-col img {
+  width: 100%;
+  border-radius: 10px;
+  transition: 0.5;
+}
+
+.facilities-col p {
+  padding: 0;
+}
+
+.facilities-col h3 {
+  margin-top: 16px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.facilities-col img:hover {
+  box-shadow: 0 0 20px 0 rgb(97, 130, 238, 0.5);
+}
+
+/* testimonial style */
+.testimonials {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.testimonials-col {
+  flex-basis: 44%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+  background: #fff3f3;
+  padding: 25px;
+  cursor: pointer;
+  display: flex;
+}
+
+.testimonials-col img {
+  height: 40px;
+  margin-left: 5px;
+  margin-right: 30px;
+  border-radius: 50%;
+}
+.testimonials-col p {
+  padding: 0;
+}
+
+.testimonials-col h3 {
+  margin-top: 15px;
+  text-align: left;
+}
+
+.testimonials-col .fa {
+  color: #f44336;
+}
+
+/* cta style */
+.cta {
+  margin: 100px auto;
+  width: 80%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/banner2.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.cta h1 {
+  color: #fff;
+  margin-bottom: 40px;
+  padding: 0;
+}
+
+.icons .fa {
+  color: #f44336;
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 18px 0;
+}
+/* footer style */
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.footer h4 {
+  margin-bottom: 25px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.fa-heart-o {
+  color: #f44336;
+}
+/* hamburger menu */
+.menu-bar {
+  cursor: pointer;
+  z-index: 1;
+  display: none;
+}
+
+.menu-bar div {
+  width: 50px;
+  height: 7px;
+  background-color: #fff;
+  border-radius: 3px;
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.13, 0.16, 0.35, 1.65);
+}
+
+.menu-bar .bar1,
+.menu-bar .bar2 {
+  margin-bottom: 7px;
+}
+
+.menu-bar.active .bar1 {
+  transform: translate(0, 14px) rotate(44deg);
+}
+.menu-bar.active .bar2 {
+  transform: translateX(-55px);
+  background: transparent;
+}
+.menu-bar.active .bar3 {
+  transform: translate(0, -14px) rotate(-44deg);
+}
+
+/* Responsive Checkpoint */
+@media screen and (max-width: 576px) {
+  nav .logo img {
+    width: 120px;
+    margin-top: 10px;
+    margin-left: -30px;
+  }
+  .text-box h1 {
+    font-size: 20px;
+  }
+  nav ul li {
+    display: block;
+  }
+
+  /* sidebar menu */
+  nav ul {
+    position: absolute;
+    height: 100vh;
+    width: 0;
+    top: 0;
+    right: 0;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #f44336;
+    z-index: 99;
+  }
+
+  nav ul.slide {
+    width: 50%;
+  }
+  .menu-bar {
+    display: block;
+    transform: scale(0.5);
+    margin-right: -50px;
+    z-index: 999;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .testimonials-col img {
+    margin-left: 0;
+    margin-right: 15px;
+  }
+
+  .cta h1 {
+    font-size: 24px;
+  }
+}
